@@ -1,16 +1,12 @@
 const readline = require('readline-sync');
 
-let seatsBusiness = [
-  [A, B, C, D, E],
-  [1, 2, 3, 4, 5],
-];
+const seatLetters = [A, B, C, D, E];
+const businessRows = [1, 2, 3, 4, 5];
+const economyRows = [6, 7, 8];
+const businessSeats = [];
+const economySeats = [];
 
-let seatsEconomy = [
-  [A, B, C, D, E],
-  [6, 7, 8],
-];
-
-let row, seat;
+// businessSeats[seatRow][seatLetter];
 
 function prompt(message) {
   console.log(`${message}`);
