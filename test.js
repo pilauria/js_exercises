@@ -1,25 +1,49 @@
-// 3. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array. Go to the editor
-// Test Data :
-// console.log(first([7, 9, 0, -2]));
-// console.log(first([],3));
-// console.log(first([7, 9, 0, -2],3));
-// console.log(first([7, 9, 0, -2],6));
-// console.log(first([7, 9, 0, -2],-3));
-// Expected Output :
-// 7
-// []
-// [7, 9, 0]
-// [7, 9, 0, -2]
-// []
-// Click me to see the solution
+// For all of these, what is the value of a when the function gets called with the alert()
+// #1
+// function q1() {
+//   var a = 5;
+//   if (a > 1) {
+//     a = 3;
+//   }
+//   console.log(a);
+// }
 
-// 4. Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array. Go to the editor
-// Test Data :
-// console.log(last([7, 9, 0, -2]));
-// console.log(last([7, 9, 0, -2],3));
-// console.log(last([7, 9, 0, -2],6));
-// Expected Output :
-// -2
-// [9, 0, -2]
-// [7, 9, 0, -2]
-// Click me to see the solution
+// q1();
+
+// //#2
+// var a = 0;
+// function q2() {
+//   a = 5;
+// }
+
+// function q22() {
+//   console.log(a);
+// }
+
+// q2();
+// q22();
+// console.log(a);
+
+// //#3
+// function q3() {
+//   window.a = 'hello';
+// }
+
+// function q32() {
+//   console.log(a);
+// }
+
+// //#4
+// var a = 1;
+// function q4() {
+//   var a = 'test';
+//   console.log(a);
+// }
+
+//#5
+let a = 2;
+if (true) {
+  let a = 5;
+  console.log(a);
+}
+console.log(a);
