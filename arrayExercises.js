@@ -96,7 +96,7 @@ console.log(sumArrayUsers);
 // (1), what is the value of i? INDEX of the array.
 // (2), Make this map function pure:
 const arrayNum = [1, 2, 4, 5, 8, 9];
-const newArray = arrayNum.map(num => {
+const newAr = arrayNum.map(num => {
   return num * 2;
 });
 
