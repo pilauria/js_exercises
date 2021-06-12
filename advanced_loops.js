@@ -1,29 +1,29 @@
-// const basket = ['apples', 'oranges', ' grapes'];
-// const detailedBasket = {
-//   apples: 5,
-//   oranges: 10,
-//   grapes: 1000,
-// };
+const basket = ['apples', 'oranges', ' grapes'];
+const detailedBasket = {
+  apples: 5,
+  oranges: 10,
+  grapes: 1000,
+};
 
-// for (let i = 0; i < basket.length; i++) {
-//   console.log(basket[1]);
-// }
+for (let i = 0; i < basket.length; i++) {
+  console.log(basket[1]);
+}
 
-// basket.forEach(element => {
-//   console.log(element);
-// });
+basket.forEach(element => {
+  console.log(element);
+});
 
-// // for of => iterating - arrays, strings (iterables)
+// for of => iterating - arrays, strings (iterables)
 
-// for (item of basket) {
-//   console.log(item);
-// }
+for (item of basket) {
+  console.log(item);
+}
 
-// // for in => enumerating: objects (enumerables)
+// for in => enumerating: objects (enumerables)
 
-// for (item in detailedBasket) {
-//   console.log(item);
-// }
+for (item in detailedBasket) {
+  console.log(item);
+}
 
 // // Question #1:
 // // create a function called biggestNumberInArray() that takes
@@ -121,7 +121,3 @@ console.log(checkBasket1(amazonBasket, 'parrilla'));
 //     }
 //   }
 // }
-
-let a = [1, 3, 2];
-for (let max = a[0], i = 1, iLen = a.length; i < iLen; i++)
-  if (a[i] > max) max = a[i];
