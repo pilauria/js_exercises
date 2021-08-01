@@ -1,16 +1,14 @@
-// function largestSwap(number) {
-//   digitOne = number.toString().charAt(0);
-//   digitTwo = number.toString().charAt(1);
-//   const value = digitTwo > digitOne ? false : true;
-//   return value;
-// }
+let counter = 0;
 
-// console.log(largestSwap(14)); // false
-
-function Palindrome(str) {
-  let re = /[\W_]/g;
-  let lowRegStr = str.toLowerCase().replace(re, '');
-  let reverseStr = lowRegStr.split('').reverse().join('');
-  return reverseStr === lowRegStr;
+function incrementCounter() {
+  counter += 1;
+  renderState();
 }
-console.log(Palindrome('eye'));
+
+function renderState() {
+  console.log(counter);
+}
+
+setInterval(() => {
+  incrementCounter();
+}, 1000);
