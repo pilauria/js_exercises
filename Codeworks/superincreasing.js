@@ -4,7 +4,7 @@ Have the function Superincreasing(arr) take the array of numbers stored in arr a
 /////////////////////////////////////////////
 
 function Superincreasing(arr) {
-  var sum = 0;
+  let sum = 0;
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < sum) {
@@ -15,4 +15,4 @@ function Superincreasing(arr) {
   return true;
 }
 
-console.log(Superincreasing([1, 2, 5, 10]));
+console.log(Superincreasing([0, 0, 0, 2, 2]));
