@@ -33,25 +33,36 @@ var contacts = [
   },
 ];
 
-function lookUpProfile(name, prop) {
-  // Only change code below this line
-  contacts.forEach(item => {
-    console.log(item.firstName);
-    console.log(item[prop]);
-    if (item.firstName === name) {
-      if (item.hasOwnProperty(prop)) {
-        return item[prop];
-      } else {
-        return 'No such property';
-      }
-    }
-  });
+// function lookUpProfile(name, prop) {
+//   // Only change code below this line
+//   for (let x = 0; x < contacts.length; x++) {
+//     if (name === contacts[x].firstName && contacts[x].hasOwnProperty(prop)) {
+//       return contacts[x][prop];
+//     } else {
+//       return 'No such property';
+//     }
+//   }
 
-  return 'No such contact';
-  // Only change code above this line
-}
+//   return 'No such contact';
+//   // Only change code above this line
+// }
 
-console.log(lookUpProfile('Akira', 'likes'));
+// console.log(lookUpProfile('Akira', 'likes'));
+
+// function lookUpProfile(name, prop) {
+//   // Only change code below this line
+//   contacts.forEach(item => {
+//     // console.log(item.hasOwnProperty(lastName));
+//     if (item.firstName === name && item.hasOwnProperty(prop)) {
+//       return item[prop];
+//     } else {
+//       return 'No such property';
+//     }
+//   });
+
+//   // Only change code above this line
+// }
+// console.log(lookUpProfile('Akira', 'likes'));
 
 /////////////////////////////////////////////////
 
